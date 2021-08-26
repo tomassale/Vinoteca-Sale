@@ -1,0 +1,381 @@
+@charset "UTF-8";
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* index.html */
+.body__index {
+  background-color: #ebc79b;
+}
+
+.navegador {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.icono {
+  width: 60px;
+  padding: 9px;
+  background-color: maroon;
+}
+
+.menu li {
+  display: inline;
+  padding: 10px;
+  font-size: 20px;
+  margin-inline-end: 0px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 45rem;
+}
+
+.productos {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.productos h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+.productos img {
+  width: 300px;
+  height: 200px;
+}
+
+/*error404*/
+.body__error {
+  background-image: url(imagenes/error.jpg);
+  background-size: cover;
+}
+.body__error h1 {
+  font-size: 100px;
+  margin-top: 3cm;
+  margin-left: 7.6cm;
+  color: aquamarine;
+}
+.body__error h2 {
+  font-size: 59px;
+  margin-top: 6cm;
+  margin-left: 6cm;
+}
+.body__error h3 {
+  margin-top: 40px;
+  margin-left: 10.7cm;
+  font-size: 40px;
+  animation-name: rebote;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}
+@keyframes rebote {
+  0% {
+    margin-top: 40px;
+    margin-left: 10.7cm;
+  }
+  25% {
+    transform: translate(-3px, 0px);
+  }
+  50% {
+    transform: translate(1px, 0px);
+  }
+  75% {
+    transform: translate(5px, 0px);
+  }
+  100% {
+    margin-top: 40px;
+    margin-left: 10.7cm;
+  }
+}
+.body__error h3:hover {
+  font-size: 42px;
+  margin-left: 10.5cm;
+}
+
+/* registro.html */
+.body__registro {
+  font-family: "Style Script", cursive;
+  background-image: url(imagenes/fondoCorchoR.jpg);
+  background-size: cover;
+}
+.body__registro .volverR {
+  color: #faf5f0;
+  font-size: 45px;
+  padding: 50px;
+}
+.body__registro .tituloR {
+  background-color: bisque;
+  font-size: 140px;
+  color: #f0ad56;
+}
+.body__registro .formularioR {
+  background-color: #f3d6b3;
+  height: auto;
+  width: 16cm;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: center;
+  border: dotted 10px #f1b872;
+  font-size: 36px;
+}
+.body__registro .formularioR .txtR {
+  width: 5cm;
+  height: 26px;
+}
+.body__registro .formularioR .txtR:focus {
+  width: 6cm;
+  height: 30px;
+  font-size: 26px;
+}
+.body__registro .formularioR .TYCR {
+  color: #4848eb;
+}
+.body__registro .formularioR .buttonR {
+  background-color: #fdcc8b;
+  width: 4cm;
+  height: 38px;
+  font-size: 28px;
+  font-family: "Style Script", cursive;
+}
+.body__registro .formularioR .menuR {
+  width: 7cm;
+  height: 30px;
+  font-size: 20px;
+  background-color: #ffcd91;
+}
+
+/* inicioSesión.html */
+.body__inicioSesion {
+  background-image: url(imagenes/fondoBodegaIS.jpg);
+  background-size: 120rem;
+  font-family: "Style Script", cursive;
+}
+.body__inicioSesion .volverIS {
+  color: blanchedalmond;
+  font-size: 45px;
+  padding: 40px;
+}
+.body__inicioSesion .formularioIS {
+  width: 650px;
+  height: 450px;
+  text-align: center;
+  margin: auto;
+  margin-top: 130px;
+  border: dotted 8px #92844d;
+  background-color: #ffebd2;
+  font-size: 50px;
+  color: #333;
+}
+.body__inicioSesion .formularioIS h1 {
+  font-size: 130px;
+  color: #ac906c;
+  background-color: bisque;
+}
+.body__inicioSesion .formularioIS input {
+  width: 200px;
+  height: 25px;
+}
+.body__inicioSesion .formularioIS input:focus {
+  width: 250px;
+  height: 30px;
+  font-size: 20px;
+}
+.body__inicioSesion .formularioIS button {
+  background-color: #f0d8b5;
+  width: 140px;
+  height: 30px;
+  font-size: 23px;
+  font-family: "Style Script", cursive;
+}
+
+/* nosotros.html */
+.body__nosotros {
+  font-family: "Style Script", cursive;
+  font-size: 40px;
+  margin: 15px 6cm 0px 6cm;
+  background-image: linear-gradient(to bottom, #ebb87b, bisque);
+}
+.body__nosotros nav {
+  word-spacing: 20px;
+}
+.body__nosotros h1 {
+  text-align: center;
+  font-size: 60px;
+}
+.body__nosotros .nuestraHistoria {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.body__nosotros .nuestraHistoria h2 {
+  grid-column-start: 1;
+  grid-row-end: 1;
+  text-align: center;
+}
+.body__nosotros .nuestraHistoria p {
+  grid-column-start: 1;
+  grid-row-end: 1;
+  margin-top: 130px;
+}
+.body__nosotros .nuestraHistoria img {
+  width: 600px;
+  height: 370px;
+  grid-column-start: 2;
+  grid-row-end: 1;
+  border: dotted black 8px;
+}
+.body__nosotros .nuestraBodega {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.body__nosotros .nuestraBodega h2 {
+  grid-column-start: 2;
+  grid-row-end: 1;
+  text-align: center;
+}
+.body__nosotros .nuestraBodega p {
+  grid-column-start: 2;
+  grid-row-end: 1;
+  margin-top: 130px;
+}
+.body__nosotros .nuestraBodega img {
+  width: 600px;
+  height: 370px;
+  grid-column-start: 1;
+  grid-row-end: 1;
+  border: dotted black 8px;
+}
+
+/* contacto.html */
+.body__contacto {
+  background-color: aliceblue;
+  font-family: "EB Garamond", serif;
+}
+.body__contacto nav address {
+  padding: 10px;
+  word-spacing: 10px;
+  font-size: 27px;
+}
+.body__contacto h1 {
+  margin: 10px 10px;
+  text-align: center;
+  text-decoration: overline underline;
+  font-size: 50px;
+}
+
+/* terminosYCondiciones.html */
+.body__terminosYCondiciones {
+  background-color: rgba(141, 141, 216, 0.377);
+}
+.body__terminosYCondiciones nav {
+  font-size: 30px;
+  padding: 10px;
+}
+.body__terminosYCondiciones .TYC h1 {
+  text-align: center;
+  text-decoration: underline double #393985;
+  margin-bottom: 17px;
+}
+.body__terminosYCondiciones .TYC p {
+  padding: 30px;
+  font-size: 25px;
+  font-family: "WindSong", cursive;
+  color: black;
+}
+.body__terminosYCondiciones .TYC ul li {
+  padding: 6px;
+  margin-left: 6.3cm;
+  font-size: 20px;
+}
+
+/* media querie index.html*/
+/* media querie contacto.html*/
+/* media querie registro.html*/
+/* media querie inicioSesión.html*/
+@media (min-width: 320px) and (max-width: 576px) and (orientation: portrait) {
+  .body__inicioSesion {
+    background-image: none;
+    background-color: #ffebd2;
+    justify-content: center;
+  }
+  .body__inicioSesion .tituloIS {
+    font-family: "Style Script", cursive;
+    font-size: 80px;
+    color: #ac906c;
+    background-color: bisque;
+  }
+  .body__inicioSesion .formulario {
+    width: 100vw;
+    height: max-content;
+    text-align: center;
+    margin-top: 230px;
+    border: dotted 8px #92844d;
+    background-color: #eed1ae;
+    font-family: "Style Script", cursive;
+    font-size: 30px;
+    color: #333;
+    padding: 10px;
+  }
+  .body__inicioSesion .input {
+    width: 200px;
+    height: 25px;
+  }
+  .body__inicioSesion .input:focus {
+    width: 190px;
+    height: 30px;
+    font-size: 20px;
+  }
+}
+@media (min-height: 320px) and (max-height: 576px) and (orientation: landscape) {
+  .tituloIS {
+    font-family: "Style Script", cursive;
+    font-size: 100px;
+    color: #ac906c;
+    background-color: bisque;
+  }
+
+  .formulario {
+    width: 100%;
+    height: 100vh;
+    border: dotted 8px #92844d;
+    background-color: #eed1ae;
+    font-family: "Style Script", cursive;
+    font-size: 30px;
+    align-content: center;
+    color: #333;
+    margin: auto;
+    padding: 5px;
+  }
+
+  .input {
+    width: 200px;
+    height: 25px;
+  }
+
+  .input:focus {
+    width: 190px;
+    height: 30px;
+    font-size: 20px;
+  }
+}
+/* media querie terminosYCondiciones.html*/
+/* copyright */
+.footer__copyright {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  padding: 3px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=styles.scss.map */
+
+/*# sourceMappingURL=styles.css.map */
