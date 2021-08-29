@@ -14,91 +14,30 @@ a {
 .body__index {
   background-color: #ebc79b;
 }
-
-.navegador {
-  display: inline-flex;
-  text-decoration: none;
-}
-
-.icono {
+.body__index nav img {
   width: 60px;
   padding: 9px;
   background-color: maroon;
 }
-
-.menu li {
-  display: inline;
-  padding: 10px;
-  font-size: 20px;
-  margin-inline-end: 0px;
-}
-
-.carousel-inner img {
+.body__index #carouselExampleControls img {
   width: 100%;
   height: 45rem;
 }
-
-.productos {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
-.productos h1 {
+.body__index h1 {
   text-align: center;
   text-decoration: underline;
 }
-.productos img {
-  width: 300px;
+.body__index .productos {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+  grid-column-gap: 200px;
+  grid-row-gap: 200px;
+  justify-content: center;
+}
+.body__index .productos img {
+  width: 200px;
   height: 200px;
-}
-
-/*error404*/
-.body__error {
-  background-image: url(imagenes/error.jpg);
-  background-size: cover;
-}
-.body__error h1 {
-  font-size: 100px;
-  margin-top: 3cm;
-  margin-left: 7.6cm;
-  color: aquamarine;
-}
-.body__error h2 {
-  font-size: 59px;
-  margin-top: 6cm;
-  margin-left: 6cm;
-}
-.body__error h3 {
-  margin-top: 40px;
-  margin-left: 10.7cm;
-  font-size: 40px;
-  animation-name: rebote;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-delay: 3s;
-}
-@keyframes rebote {
-  0% {
-    margin-top: 40px;
-    margin-left: 10.7cm;
-  }
-  25% {
-    transform: translate(-3px, 0px);
-  }
-  50% {
-    transform: translate(1px, 0px);
-  }
-  75% {
-    transform: translate(5px, 0px);
-  }
-  100% {
-    margin-top: 40px;
-    margin-left: 10.7cm;
-  }
-}
-.body__error h3:hover {
-  font-size: 42px;
-  margin-left: 10.5cm;
 }
 
 /* registro.html */
@@ -259,16 +198,27 @@ a {
   background-color: aliceblue;
   font-family: "EB Garamond", serif;
 }
-.body__contacto nav address {
+.body__contacto nav {
   padding: 10px;
   word-spacing: 10px;
   font-size: 27px;
 }
 .body__contacto h1 {
-  margin: 10px 10px;
   text-align: center;
   text-decoration: overline underline;
   font-size: 50px;
+}
+.body__contacto div {
+  display: flex;
+  flex-direction: column;
+}
+.body__contacto footer .redes {
+  display: inline;
+  width: 70px;
+  height: 70px;
+}
+.body__contacto footer .textoEjemplo {
+  display: inline;
 }
 
 /* terminosYCondiciones.html */
@@ -296,6 +246,56 @@ a {
   font-size: 20px;
 }
 
+/*error404*/
+.body__error {
+  background-image: url(imagenes/error.jpg);
+  background-size: cover;
+}
+.body__error h1 {
+  font-size: 100px;
+  margin-top: 3cm;
+  margin-left: 7.4cm;
+  color: aquamarine;
+}
+.body__error h2 {
+  font-size: 59px;
+  margin-top: 6cm;
+  margin-left: 6cm;
+}
+.body__error h3 {
+  width: max-content;
+  margin-top: 40px;
+  margin-left: 10.7cm;
+  font-size: 40px;
+  animation-name: rebote;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}
+@keyframes rebote {
+  0% {
+    margin-top: 40px;
+    margin-left: 10.7cm;
+  }
+  25% {
+    transform: translate(-3px, 0px);
+  }
+  50% {
+    transform: translate(1px, 0px);
+  }
+  75% {
+    transform: translate(5px, 0px);
+  }
+  100% {
+    margin-top: 40px;
+    margin-left: 10.7cm;
+  }
+}
+.body__error h3:hover {
+  font-size: 42px;
+  margin-left: 10.5cm;
+}
+
 /* media querie index.html*/
 /* media querie contacto.html*/
 /* media querie registro.html*/
@@ -308,7 +308,7 @@ a {
   }
   .body__inicioSesion .tituloIS {
     font-family: "Style Script", cursive;
-    font-size: 80px;
+    font-size: 60px;
     color: #ac906c;
     background-color: bisque;
   }
@@ -320,7 +320,7 @@ a {
     border: dotted 8px #92844d;
     background-color: #eed1ae;
     font-family: "Style Script", cursive;
-    font-size: 30px;
+    font-size: 20px;
     color: #333;
     padding: 10px;
   }
@@ -331,13 +331,13 @@ a {
   .body__inicioSesion .input:focus {
     width: 190px;
     height: 30px;
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 @media (min-height: 320px) and (max-height: 576px) and (orientation: landscape) {
   .tituloIS {
     font-family: "Style Script", cursive;
-    font-size: 100px;
+    font-size: 80px;
     color: #ac906c;
     background-color: bisque;
   }
@@ -345,14 +345,14 @@ a {
   .formulario {
     width: 100%;
     height: 100vh;
+    margin: auto;
+    padding: 5px;
     border: dotted 8px #92844d;
     background-color: #eed1ae;
     font-family: "Style Script", cursive;
-    font-size: 30px;
+    font-size: 20px;
     align-content: center;
     color: #333;
-    margin: auto;
-    padding: 5px;
   }
 
   .input {
@@ -363,7 +363,7 @@ a {
   .input:focus {
     width: 190px;
     height: 30px;
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 /* media querie terminosYCondiciones.html*/
