@@ -10,9 +10,17 @@ a {
   color: black;
 }
 
+.footer__copyright {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  padding: 3px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
 /* index.html */
 .body__index {
-  background-color: #ebc79b;
+  background-color: #ca7a4c;
 }
 .body__index nav img {
   width: 60px;
@@ -28,16 +36,51 @@ a {
   text-decoration: underline;
 }
 .body__index .productos {
+  background-image: url(imagenes/fondoIndex.jpg);
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+.body__index .productos .imagenes {
   display: grid;
   grid-template-columns: repeat(3, 200px);
   grid-template-rows: repeat(3, 200px);
-  grid-column-gap: 200px;
-  grid-row-gap: 200px;
+  grid-column-gap: 180px;
+  grid-row-gap: 180px;
   justify-content: center;
 }
-.body__index .productos img {
+.body__index .productos .imagenes img {
   width: 200px;
   height: 200px;
+  border: dotted 5px black;
+}
+.body__index .productos .imagenes img:hover {
+  transform: scale(1.1);
+}
+.body__index footer {
+  height: 260px;
+  background-color: rgba(0, 0, 0, 0.808);
+  color: #dbe1e6;
+}
+.body__index footer .redesSociales {
+  display: flex;
+  justify-content: space-evenly;
+}
+.body__index footer .redesSociales .redes {
+  margin-top: 20px;
+}
+.body__index footer .redesSociales .redes h2 {
+  text-align: center;
+}
+.body__index footer .redesSociales .redes img {
+  padding: 10px;
+}
+.body__index footer .redesSociales .lorem {
+  margin-top: 30px;
+}
+.body__index footer .redesSociales .lorem h3 {
+  display: inline;
+  padding: 20px;
 }
 
 /* registro.html */
@@ -150,46 +193,16 @@ a {
   text-align: center;
   font-size: 60px;
 }
-.body__nosotros .nuestraHistoria {
-  display: grid;
-  grid-template-columns: 50% 50%;
+.body__nosotros .nosotros {
+  display: flex;
+  justify-content: space-evenly;
 }
-.body__nosotros .nuestraHistoria h2 {
-  grid-column-start: 1;
-  grid-row-end: 1;
+.body__nosotros .nosotros .texto h2 {
   text-align: center;
 }
-.body__nosotros .nuestraHistoria p {
-  grid-column-start: 1;
-  grid-row-end: 1;
-  margin-top: 130px;
-}
-.body__nosotros .nuestraHistoria img {
+.body__nosotros .nosotros .imagen img {
   width: 600px;
   height: 370px;
-  grid-column-start: 2;
-  grid-row-end: 1;
-  border: dotted black 8px;
-}
-.body__nosotros .nuestraBodega {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-}
-.body__nosotros .nuestraBodega h2 {
-  grid-column-start: 2;
-  grid-row-end: 1;
-  text-align: center;
-}
-.body__nosotros .nuestraBodega p {
-  grid-column-start: 2;
-  grid-row-end: 1;
-  margin-top: 130px;
-}
-.body__nosotros .nuestraBodega img {
-  width: 600px;
-  height: 370px;
-  grid-column-start: 1;
-  grid-row-end: 1;
   border: dotted black 8px;
 }
 
@@ -208,17 +221,45 @@ a {
   text-decoration: overline underline;
   font-size: 50px;
 }
-.body__contacto div {
+.body__contacto .contacto {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
 }
-.body__contacto footer .redes {
-  display: inline;
-  width: 70px;
-  height: 70px;
+.body__contacto .contacto .textoItems {
+  width: 40%;
+  font-size: 20px;
 }
-.body__contacto footer .textoEjemplo {
+.body__contacto .contacto .textoItems ul {
+  list-style: none;
+}
+.body__contacto .mapa {
+  width: 40%;
+}
+.body__contacto footer {
+  background-color: rgba(0, 0, 0, 0.781);
+  background-size: cover;
+  color: aliceblue;
+  margin-bottom: 0px;
+}
+.body__contacto footer .redesSociales {
+  display: flex;
+  justify-content: space-evenly;
+}
+.body__contacto footer .redesSociales .redes {
+  margin-top: 10px;
+}
+.body__contacto footer .redesSociales .redes h2 {
+  text-align: center;
+}
+.body__contacto footer .redesSociales .redes img {
+  padding: 10px;
+}
+.body__contacto footer .redesSociales .lorem {
+  margin-top: 10px;
+}
+.body__contacto footer .redesSociales .lorem h3 {
   display: inline;
+  padding: 20px;
 }
 
 /* terminosYCondiciones.html */
@@ -368,14 +409,6 @@ a {
 }
 /* media querie terminosYCondiciones.html*/
 /* copyright */
-.footer__copyright {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  text-align: center;
-  padding: 3px;
-  font-size: 20px;
-  margin-top: 50px;
-}
-
 /*# sourceMappingURL=styles.scss.map */
 
 /*# sourceMappingURL=styles.css.map */

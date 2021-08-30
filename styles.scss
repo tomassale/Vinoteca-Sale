@@ -9,10 +9,18 @@ a {
   text-decoration: none;
   color: black;
 }
+.footer__copyright {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  padding: 3px;
+  font-size: 20px;
+  margin-top: 50px;
+}
 
 /* index.html */
 .body__index {
-  background-color: rgb(235, 199, 155);
+  background-color: rgb(202, 122, 76);
   nav {
     img {
       width: 60px;
@@ -31,16 +39,50 @@ a {
     text-decoration: underline;
   }
   .productos {
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(3, 200px);
-    grid-column-gap: 200px;
-    grid-row-gap: 200px;
-    justify-content: center;
-    
-    img {
-      width: 200px;
-      height: 200px;
+    background-image: url(imagenes/fondoIndex.jpg);
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    .imagenes {
+      display: grid;
+      grid-template-columns: repeat(3, 200px);
+      grid-template-rows: repeat(3, 200px);
+      grid-column-gap: 180px;
+      grid-row-gap: 180px;
+      justify-content: center;
+      img {
+        width: 200px;
+        height: 200px;
+        border: dotted 5px black;
+      }
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  footer {
+    height: 260px;
+    background-color: rgba(0, 0, 0, 0.808);
+    color: rgb(219, 225, 230);
+    .redesSociales {
+      display: flex;
+      justify-content: space-evenly;
+      .redes {
+        margin-top: 20px;
+        h2 {
+          text-align: center;
+        }
+        img {
+          padding: 10px;
+        }
+      }
+      .lorem {
+        margin-top: 30px;
+        h3 {
+          display: inline;
+          padding: 20px;
+        }
+      }
     }
   }
 }
@@ -154,46 +196,20 @@ a {
     text-align: center;
     font-size: 60px;
   }
-  .nuestraHistoria {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    h2 {
-      grid-column-start: 1;
-      grid-row-end: 1;
-      text-align: center;
+  .nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    .texto {
+      h2 {
+        text-align: center;
+      }
     }
-    p {
-      grid-column-start: 1;
-      grid-row-end: 1;
-      margin-top: 130px;
-    }
-    img {
-      width: 600px;
-      height: 370px;
-      grid-column-start: 2;
-      grid-row-end: 1;
-      border: dotted black 8px;
-    }
-  }
-  .nuestraBodega {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    h2 {
-      grid-column-start: 2;
-      grid-row-end: 1;
-      text-align: center;
-    }
-    p {
-      grid-column-start: 2;
-      grid-row-end: 1;
-      margin-top: 130px;
-    }
-    img {
-      width: 600px;
-      height: 370px;
-      grid-column-start: 1;
-      grid-row-end: 1;
-      border: dotted black 8px;
+    .imagen {
+      img {
+        width: 600px;
+        height: 370px;
+        border: dotted black 8px;
+      }
     }
   }
 }
@@ -212,28 +228,44 @@ a {
     text-decoration: overline underline;
     font-size: 50px;
   }
-  div {
+  .contacto {
     display: flex;
-    flex-direction: column;
-  }
-  .textoItems {
-    p {
-    }
-    address {
+    justify-content: space-evenly;
+    .textoItems {
+      width: 40%;
+      font-size: 20px;
+      ul {
+        list-style: none;
+      }
     }
   }
   .mapa {
+    width: 40%;
   }
   footer {
-    h2 {
-    }
-    .redes {
-      display: inline;
-      width: 70px;
-      height: 70px;
-    }
-    .textoEjemplo {
-      display: inline;
+    background-color: rgba(0, 0, 0, 0.781);
+    background-size: cover;
+    color: aliceblue;
+    margin-bottom: 0px;
+    .redesSociales {
+      display: flex;
+      justify-content: space-evenly;
+      .redes {
+        margin-top: 10px;
+        h2 {
+          text-align: center;
+        }
+        img {
+          padding: 10px;
+        }
+      }
+      .lorem {
+        margin-top: 10px;
+        h3 {
+          display: inline;
+          padding: 20px;
+        }
+      }
     }
   }
 }
@@ -315,7 +347,9 @@ a {
   }
 }
 /* media querie index.html*/
+@media (min-width: 320px) and (max-width: 576px) and (orientation:portrait){
 
+}
 /* media querie contacto.html*/
 
 /* media querie registro.html*/
@@ -387,13 +421,5 @@ a {
 /* media querie terminosYCondiciones.html*/
 
 /* copyright */
-.footer__copyright {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-align: center;
-  padding: 3px;
-  font-size: 20px;
-  margin-top: 50px;
-}
 
 /*# sourceMappingURL=styles.scss.map */
