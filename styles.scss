@@ -52,7 +52,7 @@ a {
       img {
         width: 200px;
         height: 200px;
-        border: dotted 5px black;
+        border: dotted 5px rgb(158, 194, 75);
       }
       img:hover {
         transform: scale(1.1);
@@ -323,10 +323,7 @@ a {
     margin-top: 40px;
     margin-left: 10.7cm;
     font-size: 40px;
-    animation-name: rebote;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-delay: 3s;
+    animation: rebote 0.5s infinite 3s;
   }
   @keyframes rebote {
     0% {
