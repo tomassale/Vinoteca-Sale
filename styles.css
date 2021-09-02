@@ -13,7 +13,7 @@ a {
 .footer__copyright {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   font-size: 20px;
 }
 
@@ -211,6 +211,9 @@ a {
   width: 600px;
   height: 370px;
   border: dotted black 8px;
+}
+.body__nosotros footer {
+  margin-top: 20px;
 }
 
 /* contacto.html */
