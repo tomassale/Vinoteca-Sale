@@ -240,8 +240,9 @@ a {
   width: 40%;
   font-size: 20px;
 }
-.body__contacto .contacto .textoItems ul {
+.body__contacto .contacto .textoItems li {
   list-style: none;
+  padding: 12px;
 }
 .body__contacto .mapa {
   width: 40%;

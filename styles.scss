@@ -245,8 +245,9 @@ a {
     .textoItems {
       width: 40%;
       font-size: 20px;
-      ul {
+      li {
         list-style: none;
+        padding: 12px;
       }
     }
   }
