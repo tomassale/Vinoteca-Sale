@@ -30,15 +30,16 @@ a {
   width: 100%;
   height: 45rem;
 }
-.body__index h1 {
-  text-align: center;
-  text-decoration: underline;
-}
 .body__index .productos {
   background-image: url(imagenes/fondoIndex.jpg);
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 200px;
+}
+.body__index .productos h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 50px;
 }
 .body__index .productos .imagenes {
   display: grid;
@@ -106,7 +107,6 @@ a {
   width: 16cm;
   margin: auto;
   margin-bottom: 30px;
-  text-align: center;
   border: dotted 10px #f1b872;
   font-size: 36px;
 }
@@ -157,6 +157,7 @@ a {
   background-color: #ffebd2;
   font-size: 50px;
   color: #333;
+  display: flex;
 }
 .body__inicioSesion .formularioIS h1 {
   font-size: 130px;
@@ -341,6 +342,12 @@ a {
 }
 
 /* media querie index.html*/
+@media (max-width: 576px) and (orientation: portrait) {
+  .body__index {
+    height: 100vh;
+    width: 100vw;
+  }
+}
 /* media querie contacto.html*/
 /* media querie registro.html*/
 /* media querie inicioSesión.html*/
