@@ -96,11 +96,6 @@ a {
   font-size: 45px;
   padding: 50px;
 }
-.body__registro .tituloR {
-  background-color: bisque;
-  font-size: 140px;
-  color: #f0ad56;
-}
 .body__registro .formularioR {
   background-color: #f3d6b3;
   height: auto;
@@ -109,6 +104,15 @@ a {
   margin-bottom: 30px;
   border: dotted 10px #f1b872;
   font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.body__registro .formularioR h1 {
+  background-color: bisque;
+  font-size: 140px;
+  color: #f0ad56;
+  text-align: center;
 }
 .body__registro .formularioR .txtR {
   width: 5cm;
@@ -117,7 +121,7 @@ a {
 .body__registro .formularioR .txtR:focus {
   width: 6cm;
   height: 30px;
-  font-size: 26px;
+  font-size: 16px;
 }
 .body__registro .formularioR .TYCR {
   color: #7979eb;
@@ -158,6 +162,7 @@ a {
   font-size: 50px;
   color: #333;
   display: flex;
+  flex-direction: column;
 }
 .body__inicioSesion .formularioIS h1 {
   font-size: 130px;

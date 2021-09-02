@@ -20,32 +20,42 @@
     <a href="index.html" class="volverR">⇚volver</a>
     </header>
     <div class="formularioR">
-    <h1 class="tituloR">Registrarse</h1>
-    <form action="" method="POST" enctype="application/x-www-form-urlencoded">
-      <label for="nombre">Nombre</label>
-      <input type="text" required  class="txtR" id="nombre"/>
-      <label for="apellido">Apellido</label>
-      <input type="text" required  class="txtR" id="apellido"/>
-      <label for="email">Correo electronico: </label>
-      <input type="email" required class="txtR" id="email"/>
-      <label for="contraseña">Contraseña: </label>
-      <input type="password" required class="txtR" id="contraseña"/>
-      <label for="sexo">Genero:</label>
-      Hombre <input type="radio" name="sexo" value="hombre" />
-      Mujer <input type="radio" name="sexo" value="mujer" />
-      Otro <input type="radio" name="sexo" value="otro" />
-      <select name="preferencias" class="menuR">
-        <option value="Seleccione preferencia">
-          Seleccione su preferencia
-        </option>
-        <option value="vino tinto">Vino Tinto</option>
-        <option value="vino blanco">Vino Blanco</option>
-        <option value="espumante">Espumante</option>
-        <option value="vino especial">Vino Especial</option>
-      </select>
-      Recibir mails con promociones <input type="checkbox" />
-      Estoy de acuerdo con los <a href="terminosYCondiciones.html" class="TYCR">terminos y condiciones </a><input type="checkbox" />
-      <button type="submit" class="buttonR"><a href="index.html">Registrarme</a></button>
+      <h1>Registrarse</h1>
+      <form action="" method="POST" enctype="application/x-www-form-urlencoded">
+        <div>
+          <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" required  class="txtR" id="nombre"/>
+          </div>
+          <div>
+            <label for="apellido">Apellido</label>
+            <input type="text" required  class="txtR" id="apellido"/>
+          </div>
+          <div>
+            <label for="email">Correo electronico: </label>
+            <input type="email" required class="txtR" id="email"/>
+          </div>
+          <div>
+            <label for="contraseña">Contraseña: </label>
+            <input type="password" required class="txtR" id="contraseña"/>
+          </div>
+        </div>
+        <div>
+          <label for="sexo"><legend>Genero:</legend></label>
+          Hombre <input type="radio" name="sexo" value="hombre" />
+          Mujer <input type="radio" name="sexo" value="mujer" />
+          Otro <input type="radio" name="sexo" value="otro" />
+        </div>
+        <select name="preferencias" class="menuR">
+          <option value="Seleccione preferencia">Seleccione su preferencia</option>
+          <option value="vino tinto">Vino Tinto</option>
+          <option value="vino blanco">Vino Blanco</option>
+          <option value="espumante">Espumante</option>
+          <option value="vino especial">Vino Especial</option>
+        </select>
+        <p>Recibir mails con promociones <input type="checkbox" /></p>
+        <p> Estoy de acuerdo con los <a href="terminosYCondiciones.html" class="TYCR">terminos y condiciones </a><input type="checkbox" /></p>
+        <button type="submit" class="buttonR"><a href="index.html">Registrarme</a></button>
     </div>
   </body>
 </html>
