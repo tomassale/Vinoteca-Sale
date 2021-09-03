@@ -26,7 +26,7 @@ a {
   padding: 9px;
   background-color: maroon;
 }
-.body__index #carouselExampleControls img {
+.body__index .carousel img {
   width: 100%;
   height: 45rem;
 }
@@ -146,12 +146,12 @@ a {
   background-size: 120rem;
   font-family: "Style Script", cursive;
 }
-.body__inicioSesion .volverIS {
+.body__inicioSesion .volver {
   color: blanchedalmond;
   font-size: 45px;
   padding: 40px;
 }
-.body__inicioSesion .formularioIS {
+.body__inicioSesion .formulario {
   width: 650px;
   height: 450px;
   text-align: center;
@@ -164,21 +164,21 @@ a {
   display: flex;
   flex-direction: column;
 }
-.body__inicioSesion .formularioIS h1 {
+.body__inicioSesion .formulario h1 {
   font-size: 130px;
   color: #ac906c;
   background-color: bisque;
 }
-.body__inicioSesion .formularioIS input {
+.body__inicioSesion .formulario input {
   width: 200px;
   height: 25px;
 }
-.body__inicioSesion .formularioIS input:focus {
+.body__inicioSesion .formulario input:focus {
   width: 250px;
   height: 30px;
   font-size: 20px;
 }
-.body__inicioSesion .formularioIS button {
+.body__inicioSesion .formulario button {
   background-color: #f0d8b5;
   width: 140px;
   height: 30px;
@@ -354,9 +354,127 @@ a {
 
 /* media querie index.html*/
 @media (max-width: 576px) and (orientation: portrait) {
-  .body__index {
-    height: 100vh;
-    width: 100vw;
+  .body__index .carousel img {
+    height: 30rem;
+  }
+  .body__index .productos {
+    background-image: none;
+    padding-top: 50px;
+    padding-bottom: 100%;
+  }
+  .body__index .productos .imagenes {
+    grid-template-columns: repeat(2, 25%);
+    grid-template-rows: repeat(5, 20%);
+    grid-column-gap: 15%;
+    grid-row-gap: 10%;
+    justify-items: center;
+  }
+  .body__index .productos .imagenes img {
+    width: 120%;
+    height: 120%;
+  }
+  .body__index footer .redes h2 {
+    font-size: 20px;
+  }
+  .body__index footer .redes img {
+    width: 40%;
+    height: 40%;
+  }
+  .body__index footer .lorem h3 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) and (orientation: portrait) {
+  .body__index .carousel img {
+    height: 35rem;
+  }
+  .body__index .productos {
+    background-image: none;
+    padding-top: 50px;
+    padding-bottom: 100%;
+  }
+  .body__index .productos .imagenes {
+    grid-template-columns: repeat(2, 25%);
+    grid-template-rows: repeat(5, 20%);
+    grid-column-gap: 15%;
+    grid-row-gap: 10%;
+    justify-items: center;
+  }
+  .body__index .productos .imagenes img {
+    width: 120%;
+    height: 120%;
+  }
+  .body__index footer .redes h2 {
+    font-size: 25px;
+  }
+  .body__index footer .redes img {
+    width: 40%;
+    height: 40%;
+  }
+  .body__index footer .lorem h3 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 854px) and (orientation: portrait) {
+  .body__index .carousel img {
+    height: 40rem;
+  }
+  .body__index .productos {
+    background-image: none;
+    padding-top: 50px;
+    padding-bottom: 100%;
+  }
+  .body__index .productos .imagenes {
+    grid-template-columns: repeat(2, 25%);
+    grid-template-rows: repeat(5, 20%);
+    grid-column-gap: 15%;
+    grid-row-gap: 10%;
+    justify-items: center;
+  }
+  .body__index .productos .imagenes img {
+    width: 120%;
+    height: 120%;
+  }
+  .body__index footer .redesSociales .redes h2 {
+    font-size: 30px;
+  }
+  .body__index footer .redesSociales .redes img {
+    width: 40%;
+    height: 40%;
+  }
+  .body__index footer .redesSociales .lorem h3 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 854px) and (max-width: 1024px) {
+  .body__index .carousel img {
+    height: 40rem;
+  }
+  .body__index .productos {
+    background-image: none;
+    padding-top: 50px;
+    padding-bottom: 100%;
+  }
+  .body__index .productos .imagenes {
+    grid-template-columns: repeat(2, 25%);
+    grid-template-rows: repeat(5, 20%);
+    grid-column-gap: 15%;
+    grid-row-gap: 10%;
+    justify-items: center;
+  }
+  .body__index .productos .imagenes img {
+    width: 120%;
+    height: 120%;
+  }
+  .body__index footer .redesSociales .redes h2 {
+    font-size: 30px;
+  }
+  .body__index footer .redesSociales .redes img {
+    width: 40%;
+    height: 40%;
+  }
+  .body__index footer .redesSociales .lorem h3 {
+    font-size: 30px;
   }
 }
 /* media querie contacto.html*/
@@ -367,26 +485,26 @@ a {
     background-image: none;
     background-color: navajowhite;
   }
-  .body__inicioSesion .volverIS {
+  .body__inicioSesion .volver {
     padding-left: 0;
     font-size: 40px;
     color: #eeae60;
   }
-  .body__inicioSesion .formularioIS {
+  .body__inicioSesion .formulario {
     width: 90%;
     height: max-content;
     margin-top: 30px;
   }
-  .body__inicioSesion .formularioIS h1 {
+  .body__inicioSesion .formulario h1 {
     font-size: 60px;
   }
-  .body__inicioSesion .formularioIS label {
+  .body__inicioSesion .formulario label {
     font-size: 30px;
   }
-  .body__inicioSesion .formularioIS input {
+  .body__inicioSesion .formulario input {
     width: 42%;
   }
-  .body__inicioSesion .formularioIS input:focus {
+  .body__inicioSesion .formulario input:focus {
     width: 45%;
     font-size: 15px;
   }
@@ -396,26 +514,26 @@ a {
     background-image: none;
     background-color: navajowhite;
   }
-  .body__inicioSesion .volverIS {
+  .body__inicioSesion .volver {
     color: #eeae60;
     padding: 0px;
     font-size: 40px;
   }
-  .body__inicioSesion .formularioIS {
+  .body__inicioSesion .formulario {
     margin-top: 20px;
     height: max-content;
     width: 90%;
   }
-  .body__inicioSesion .formularioIS h1 {
+  .body__inicioSesion .formulario h1 {
     font-size: 50px;
   }
-  .body__inicioSesion .formularioIS label {
+  .body__inicioSesion .formulario label {
     font-size: 30px;
   }
-  .body__inicioSesion .formularioIS input {
+  .body__inicioSesion .formulario input {
     width: 45%;
   }
-  .body__inicioSesion .formularioIS input:focus {
+  .body__inicioSesion .formulario input:focus {
     transform: scale(1.01);
     font-size: 18px;
   }
