@@ -8,6 +8,7 @@ a {
   text-decoration: none;
   color: black;
 }
+/* copyright */
 .footer__copyright {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -211,6 +212,7 @@ a {
       }
     }
     .imagen {
+      margin: 20px;
       img {
         width: 600px;
         height: 370px;
@@ -228,9 +230,8 @@ a {
   background-color: aliceblue;
   font-family: "EB Garamond", serif;
   nav {
-    padding: 10px;
-    word-spacing: 10px;
-    font-size: 27px;
+    padding: 15px;
+    font-size: 30px;
   }
   h1 {
     text-align: center;
@@ -244,9 +245,12 @@ a {
     .textoItems {
       width: 40%;
       font-size: 20px;
-      li {
-        list-style: none;
-        padding: 12px;
+      ul {
+        margin-top: 25px;
+        li {
+          list-style: none;
+          padding: 12px;
+        }
       }
     }
   }
@@ -295,10 +299,15 @@ a {
     font-size: 30px;
     padding: 10px;
   }
+  h1 {
+    text-align: center;
+    text-decoration: underline double rgb(57, 57, 133);
+    margin-bottom: 55px;
+    margin-top: 10px;
+  }
   .TYC {
-    h1 {
-      text-align: center;
-      text-decoration: underline double rgb(57, 57, 133);
+    h2{
+      margin-left: 80px;
     }
     p {
       padding: 30px;
@@ -306,10 +315,14 @@ a {
       font-family: "WindSong", cursive;
       color: black;
     }
-    ul li {
-      padding: 6px;
-      margin-left: 6.3cm;
-      font-size: 20px;
+    ul {
+      margin-bottom: 35px;
+      li {
+        padding: 6px;
+        margin-left: 6.3cm;
+        font-size: 20px;
+        font-family: "WindSong", cursive;
+      }
     }
   }
 }
@@ -539,9 +552,9 @@ a {
     background-image: none;
     background-color: navajowhite;
     .volver{
+      color: #eeae60;
       padding-left: 0;
       font-size: 40px;
-      color: #eeae60;
     }
     .formulario{
       width: 90%;
@@ -594,6 +607,5 @@ a {
 }
 /* media querie terminosYCondiciones.html*/
 
-/* copyright */
 
 /*# sourceMappingURL=styles.scss.map */
